@@ -1,0 +1,90 @@
+.left-navigation{
+    -moz-box-shadow: 4px 4px 30px #000000;
+    -webkit-box-shadow: 4px 4px 30px #000000;
+    box-shadow: 4px 4px 30px #000000;
+    background-color: #1A162C;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    .short-name{
+        font-size: 40px;
+        color: rgb(255, 104, 104);
+    }
+    .nav-icons{
+        padding-top: 2.5rem;
+        font-size: 25px;
+        color: grey;
+        cursor: pointer;
+    }
+    .nav-icons:hover{
+        padding-top: 2.5rem;
+        font-size: 27px;
+        color: rgb(255, 104, 104);
+    }
+    .name-logo{
+        padding-top: 2rem;
+    }
+    .exit{
+      font-size: 25px;
+      color: grey;
+      margin-bottom: 4rem;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+    .exit .iconify:hover{
+        color: rgb(255, 104, 104);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .left-navigation{
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        width:100%;
+        align-items: center;
+        justify-content: space-evenly;
+        .short-name{
+            font-size: 35px;
+            color: rgb(255, 104, 104);
+        }
+        .name-logo{
+            padding-top: 0rem;
+        }
+        
+        .nav-icons{
+            padding-top: 0rem;
+            font-size: 25px;
+            color: grey;
+        }
+        .nav-icons:hover{
+            padding-top: 0rem;
+            font-size: 27px;
+            color: rgb(255, 104, 104);
+        }
+        .name-logo{
+            padding-top: 0rem;
+        }
+        .exit{
+            font-size: 25px;
+            color: grey;
+            margin-bottom: 0rem;
+            display: flex;
+            // height: 100vh;
+            flex-direction: row;
+            // justify-content: ;
+          }
+    }    
+}
+
+::ng-deep .tooltip-inner {
+    // width: 50px;
+    background-color: black;
+    color: white;
+    font-size: 12px !important;
+}

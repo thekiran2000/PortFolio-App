@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    .main__left-navigation{
+        width: 7%;
+    }
+    .main__right-section{
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        .main__left-navigation{
+            width: 100%;
+        }
+        .main__right-section{
+            width: 100%;
+            // overflow-y: hidden;
+        }
+    }    
+}
+

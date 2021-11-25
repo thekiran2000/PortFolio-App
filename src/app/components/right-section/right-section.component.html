@@ -1,0 +1,348 @@
+<div class="right-section">
+    <div class="right-section__row1">
+        <div class="right-section__row1__col1">
+            <a href="https://www.linkedin.com/in/kiran-ahire-2bb409192" target="_blank">
+                <div class="nav1-icons">
+                    <span class="iconify linkdin" data-icon="brandico:linkedin-rect"></span>
+                </div>
+            </a>
+            <div class="nav1-icons">
+                <span class="iconify github" data-icon="akar-icons:github-fill"></span>
+            </div>
+            <a href="https://twitter.com/@KiranAh65018780" target="_blank">
+                <div class="nav1-icons">
+                    <span class="iconify twitter" data-icon="akar-icons:twitter-fill"></span>
+                </div>
+            </a>
+            <div class="nav1-icons">
+                <span class="iconify instagram" data-icon="akar-icons:instagram-fill"></span>
+            </div>
+            <a href="https://www.hackerrank.com/kiranahire1" target="_blank">
+                <div class="nav1-icons">
+                    <span class="iconify hackerrank" data-icon="cib:hackerrank"></span>
+                </div>
+            </a>
+            <a href="https://www.codechef.com/users/kiranahire12" target="_blank">
+                <div class="nav1-icons">
+                    <span class="iconify codechef" data-icon="simple-icons:codechef"></span>
+                </div>
+            </a>
+        </div>
+        <div class="right-section__row1__col2"></div>
+        
+    </div>
+    <div class="right-section__row2">
+        <div class="right-section__row2__col1" *ngIf="!showAboutSection">
+            <!-- HII -->
+            <div class="right-section__row2__col1__row1" [ngStyle]="showIntroSection ? {} : {'display' : 'none'}">
+                <div class="right-section__row2__col1__row1__image">
+                    <img src="./assets/Final2.png" width="350px" alt="">
+                </div>
+                <div class="right-section__row2__col1__row1__meta-data">
+                    <!-- <h1>Hey Kiran here!!</h1> -->
+                    <p class="line-1 anim-typewriter1">Hey Kiran here!!</p>
+                    <div class="right-section__row2__col1__row1__meta-data__intro">
+                        This is the place where you are going to know about my projects,skills and many more so check it out.. 
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="right-section__row2__col1__row2">
+                <div class="project-title-parent">
+                    <span class="iconify projects-icon" data-icon="eos-icons:project-outlined"></span>
+                    <div class="project-title-parent__name">
+                        Projects
+                    </div>
+                    <div *ngIf="showIntroSection" class="toggleIcon" (click)="toggleIntroSection()">
+                        <span class="iconify togglearrow" data-icon="ant-design:up-circle-outlined"></span>
+                    </div> 
+                    <div *ngIf="!showIntroSection" class="toggleIcon" (click)="toggleIntroSection()">
+                        <span class="iconify togglearrow" data-icon="ant-design:down-circle-outlined"></span>
+                    </div> 
+                </div>
+                <div class="project-title" id="django">
+                    #Django
+                </div>
+                <div class="right-section__row2__col1__row2__project-info">
+                    <div class="project-card" *ngFor="let item of ProjectObject.django">
+                        <div [ngSwitch]="item.img">
+                            <div *ngSwitchCase="'college'">
+                                <span class="iconify icons-project" data-icon="maki:college"></span>
+                            </div>
+                            <div *ngSwitchCase="'cart'">
+                                <span class="iconify icons-project" data-icon="clarity:shopping-cart-solid"></span>
+                            </div>
+                            <div *ngSwitchCase="'exam'">
+                                <span class="iconify icons-project" data-icon="healthicons:i-exam-multiple-choice-outline"></span>
+                            </div>
+                        </div>
+                        <div class="project-card__title">{{item.name}}</div>
+                        <div class="project-card__details">{{item.details}}</div>
+                    </div>
+                </div>
+                <div class="project-title" id="flutter">
+                    #Flutter
+                </div>
+                <div class="right-section__row2__col1__row2__project-info">
+                    <div class="project-card" *ngFor="let item of ProjectObject.FlutterA;let i=index;">
+                        <div [ngSwitch]="item.img">
+                            <div *ngSwitchCase="'farm'">
+                                <span class="iconify icons-project" data-icon="healthicons:agriculture-worker"></span>
+                            </div>
+                            <div *ngSwitchCase="'chat'">
+                                <span class="iconify icons-project" data-icon="bi:chat-text"></span>
+                            </div>
+                            <div *ngSwitchCase="'shop'">
+                                <span class="iconify icons-project" data-icon="cib:shopify"></span>
+                            </div>
+                        </div>
+                        <div class="project-card__title">{{item.name}}</div>
+                        <div class="project-card__details">{{item.details}}</div>
+                    </div>
+                </div>
+                <br>
+                <div class="right-section__row2__col1__row2__project-info">
+                    <div class="project-card" *ngFor="let item of ProjectObject.FlutterB">
+                        <div [ngSwitch]="item.img">
+                            <div *ngSwitchCase="'virus'">
+                                <span class="iconify icons-project" data-icon="carbon:coronavirus"></span>
+                            </div>
+                            <div *ngSwitchCase="'imdb'">
+                                <span class="iconify icons-project" data-icon="fa:imdb"></span>
+                            </div>
+                            <div *ngSwitchCase="'news'">
+                                <span class="iconify icons-project"  data-icon="emojione-monotone:newspaper"></span>
+                            </div>
+                        </div>
+                        <div class="project-card__title">{{item.name}}</div>
+                        <div class="project-card__details">{{item.details}}</div>
+                    </div>
+                </div>
+                <div class="project-title" id="angular">
+                    #Angular
+                </div>
+                <div class="right-section__row2__col1__row2__project-info">
+                    <div class="project-card" *ngFor="let item of ProjectObject.Angular">
+                        <div [ngSwitch]="item.img">
+                            <div *ngSwitchCase="'movie'">
+                                <span class="iconify icons-project" data-icon="bx:bxs-camera-movie"></span>
+                            </div>
+                            <div *ngSwitchCase="'music'">
+                                <span class="iconify icons-project" data-icon="entypo:folder-music"></span>
+                            </div>
+                            <div *ngSwitchCase="'user'">
+                                <span class="iconify icons-project" data-icon="entypo:user"></span>
+                            </div>
+                        </div>
+                        <div class="project-card__title">{{item.name}}</div>
+                        <div class="project-card__details">{{item.details}}</div>
+                    </div>
+                </div>
+                <br>
+                <div class="internship__header">
+                    <span class="iconify" data-icon="heroicons-outline:desktop-computer"></span>
+                    <div class="internship__header__name">
+                        Internships
+                    </div> 
+                </div>
+                <div class="internships" id="intern">
+                   
+                    <div class="internships__wheels">
+                        <div class="project-card1">
+                            <img height="150px"  src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/i0vlvnln69bqpwvosdyt" alt="">
+                            <div class="project-card__title1">RadixHealth</div>
+                            <div class="project-card__details1">{{dateTimeAgo}} - Present</div>
+                            <div class="project-card__details1">UI developer</div>
+                        </div>
+                    </div>
+                    <div class="internships__radix">
+                        <div class="project-card1">
+                            <img height="90px" style="margin: 27px;"  src="./assets/digitize.png" alt="">
+                            <div class="project-card__title1">Digitize India</div>
+                            <div class="project-card__details1">15/10/2020 - 15/12/2020</div>
+                            <div class="project-card__details1">2 months</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="certificates__header">
+                    <span class="iconify certify" data-icon="fluent:certificate-20-filled"></span>
+                    <div class="certificates__header__name">
+                        Certificates
+                    </div> 
+                </div>
+                <div class="certificates" id="course">
+                    <div class="project-card1">
+                        <img height="150px"  src="./assets/certi1.png" alt="">
+                        <div class="project-card__title1">Python Data Structures</div>
+                        <div class="project-card__details1">University of Michigan</div>
+                        <!-- <div class="project-card__details1">UI developer</div> -->
+                    </div>
+                    <div class="project-card1">
+                        <img height="150px"  src="./assets/certi2.png" alt="">
+                        <div class="project-card__title1">Python Crash Course</div>
+                        <!-- <div class="project-card__details1">{{dateTimeAgo}} - Present</div> -->
+                        <div class="project-card__details1">Google</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section__row2__col1" *ngIf="showAboutSection">
+
+            <div class="about-parent">
+                <div class="about-me">
+                    <div class="about-me__meta-data">
+                        <div class="about-me__meta-data__title">
+                            Hi There,<br>I am Kiran Ahire
+                        </div>
+                        <div class="about-me__meta-data__desc">
+                            Pursing Btech from Vishwakarma Institute Of Information Technology and currently working as an Intern at Radixhealth. 
+                        </div>
+                        <div class="about-me__meta-data__tags">
+                            <div class="about-me__meta-data__tags__data">#VIIT</div>
+                            <div class="about-me__meta-data__tags__data">#RadixHealth</div>
+                            <div class="about-me__meta-data__tags__data">#Pune</div>
+                        </div>
+                    </div>
+                    <div class="about-me__image">
+                        <img src="./assets/developer.png" width="350px" alt="">
+                    </div>
+                </div>
+               
+                <div class="education-current">
+                    <div class="education">
+                        <div class="education__image">
+                            <img src="./assets/study.png" width="250px" alt="">
+                        </div>
+                        <div class="education__meta-data">
+                            <div class="education__meta-data__title"><span class="iconify" data-icon="carbon:education"></span> Education</div>
+                            <div class="education__meta-data__values">
+                                <div class="education__meta-data__values1"><span class="iconify star" data-icon="bi:bookmark-star-fill"></span> Done Schooling at SCS vidyalay @Nashik</div>
+                                <div class="education__meta-data__values2"><span class="iconify star" data-icon="bi:bookmark-star-fill"></span> Higher Secondary at Mathoshri Junior College @Nashik</div>
+                                <div class="education__meta-data__values3"><span class="iconify star" data-icon="bi:bookmark-star-fill"></span> Pursuing Btech at VIIT @Pune</div>
+                            </div>
+                            <div class="about-tags-parent">
+                                <div class="about-tags">#Pune</div>
+                                <div class="about-tags">#Nashik</div>
+                                <div class="about-tags">#College</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="current">
+                        <div class="current__image">
+                            <img src="./assets/current.png" width="320px" alt="">
+                        </div>
+                        <div class="current__meta-data">
+                            <div class="current__meta-data__title"><span class="iconify" data-icon="mdi:account-clock"></span> Current</div>
+                            <div class="current__meta-data__values">
+                                <div class="current__meta-data__values2"><span class="iconify star" data-icon="bi:bookmark-star-fill"></span> Doing internship at RadixHealth which started in June 2021 @Pune</div>
+                                <div class="current__meta-data__values2"><span class="iconify star" data-icon="bi:bookmark-star-fill"></span> Pursuing Btech from Vishwakarma Institute Of Information Technology @Pune</div>
+                                <!-- <div class="current__meta-data__values3"><span class="iconify star" data-icon="bi:bookmark-star"></span> Pursuing Btech at VIIT #Pune</div> -->
+                            </div>
+                            <div class="about-tags-parent">
+                                <div class="about-tags">#Pune</div>
+                                <div class="about-tags">#Work</div>
+                                <div class="about-tags">#College</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="hobbies">
+                    <div class="hobbies__icon">
+                        <img width="250px" height="200px" src="./assets/hobby.png" alt="">
+                    </div>
+                    <div class="hobbies__meta-data">
+                        <div class="hobbies__meta-data__title"><span class="iconify hobby" data-icon="ph:paint-brush-fill"></span> Hobbies</div>
+                        <div class="hobbies__meta-data__values">
+                            <div class="hobbies__meta-data__values1"><span class="iconify hobby-comp" data-icon="heroicons-outline:desktop-computer"></span> Interests about new technologies.</div>
+                            <div class="hobbies__meta-data__values2"><span class="iconify hobby-cricket" data-icon="whh:cricket"></span>  Playing and watching cricket.</div>
+                            <div class="hobbies__meta-data__values3"><span class="iconify hobby-movie" data-icon="bx:bx-camera-movie"></span>  Watching movies.</div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-details__row1">
+                        <div class="contact-details__row1__mail"><span class="iconify" data-icon="simple-icons:gmail"></span> kiran.ahirefire2000@gmail.com</div>
+                        <div class="contact-details__row1__phone"><span class="iconify" data-icon="bi:whatsapp"></span> +91 9011492718</div>
+                    </div>
+                    <div class="contact-details__row2">
+                        <div class="contact-details__row2__DOB"><span class="iconify" data-icon="emojione-monotone:birthday-cake"></span> 14/03/2000</div>
+                        <div class="contact-details__row2__address"><span class="iconify" data-icon="dashicons:admin-home"></span> 04,Sairaj RowHouse,Peth Road,Nashik</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="right-section__row2__col2">
+            <!-- HII -->
+            <div class="right-section__row2__col2__row1">
+                <div class="right-section__row2__col2__row1__image">
+                    <img src="https://p.kindpng.com/picc/s/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" class="user-profile" alt="">
+                </div>
+                <div class="right-section__row2__col2__row1__tags">
+                    <div class="tags">#Coder</div>
+                    <div class="tags">#enthusiast</div>
+                    <div class="tags">#QuickLearner</div>
+                      
+                </div>
+                <div class="right-section__row2__col2__row1__tags">
+                    <div class="tags">#Devloper</div>
+                    <div class="tags">#TeamMan</div>
+                    <div class="tags">#Peace</div>
+                </div>
+               
+            </div>
+            <div class="right-section__row2__col2__row2">
+                <div class="icons-row1">
+                    <div class="project-icons" (click)="toTop('django')">
+                        <!-- <img height="50px" src="https://icon-library.com/images/django-icon/django-icon-0.jpg" alt=""> -->
+                        <span class="iconify" data-icon="logos:django-icon"></span>
+                    </div>
+                    <div class="project-icons" (click)="toTop('angular')">
+                        <!-- <img height="45px" src="https://cdn.freebiesupply.com/logos/thumbs/2x/angular-icon-1-logo.png" alt=""> -->
+                        <span class="iconify" data-icon="logos:angular-icon"></span>
+                    </div>
+                    <div class="project-icons" (click)="toTop('flutter')">
+                        <!-- <img height="50px" src="https://o.remove.bg/downloads/0ed951db-ad32-4986-9cc9-a55d93b771d2/t_flutter5786-removebg-preview.png" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-flutter"></span>
+                    </div>
+                </div>
+                <div class="icons-row1">
+                    <div class="project-icons" (click)="toTop('course')">
+                        <!-- <img height="55px" src="https://o.remove.bg/downloads/537a3db2-839d-4c86-a01d-61d1f10d1537/74-740791_python-logo-clipart-python-programming-language-icon-removebg-preview.png" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-python"></span>
+                    </div>
+                    <div class="project-icons" (click)="toTop('course')">
+                        <!-- <img height="50px" src="https://www.freeiconspng.com/thumbs/c-logo-icon/c--logo-icon-0.png" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-cpp3"></span>
+                    </div>
+                    <div class="project-icons">
+                        <!-- <img height="50px" src="https://o.remove.bg/downloads/abc86b25-64f6-434b-ab16-d2ce745630ff/67-678384_transparent-javascript-icon-png-png-download-removebg-preview.png" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span>
+                    </div>
+                </div>
+                <div class="icons-row1">
+                    <div class="project-icons">
+                        <!-- <img height="55px" src="https://www.sudais.tech/images/skills/html5.png" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-html"></span>
+                    </div>
+                    <div class="project-icons">
+                        <!-- <img height="55px" src="https://www.iconninja.com/files/752/618/436/css-internet-technology-website-web-style-css3-icon.svg" alt=""> -->
+                        <span class="iconify" data-icon="vscode-icons:file-type-css"></span>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

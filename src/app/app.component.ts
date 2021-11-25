@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  public aboutShowFlag:any;
+  public internShowFlag:any;
+
+  public aboutClickedFunc(event:any){
+    this.aboutShowFlag=event;
+  }
+  internClickedFunc(event:any){
+    this.internShowFlag=event;
+  }
 }
