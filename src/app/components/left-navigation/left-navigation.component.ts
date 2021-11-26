@@ -34,4 +34,6 @@ export class LeftNavigationComponent implements OnInit {
     this.navflagHome=true;
   }
 
+  
+
 }

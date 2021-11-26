@@ -75,8 +75,9 @@
             color: grey;
             margin-bottom: 0rem;
             display: flex;
-            // height: 100vh;
-            flex-direction: row;
+            height: 0vh;
+            flex-direction: column;
+            justify-content: center;
             // justify-content: ;
           }
     }    
@@ -88,3 +89,4 @@
     color: white;
     font-size: 12px !important;
 }
+a { color: inherit; } 
