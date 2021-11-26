@@ -61,34 +61,34 @@ export class RightSectionComponent implements OnInit,OnChanges {
         {
           name:'AgriEase',
           img:'farm',
-          details:'Useful tool for aspirants to find relevant colleges and explore them.'
+          details:'agriculture application which helps in several parameters such as weather,market values etc'
         },
         {
           name:"Chatter",
           img:'chat',
-          details:"Shopping website prototype like amazon and flipkart"
+          details:"A chatting app which includes chatting between friends and strangers"
         },
         {
           name:"ShopNest",
           img:'shop',
-          details:"Useful tool for students to find difficult meanings from notes easily."
+          details:"A Shopping app which having functionalities like amazon with panel for shop owners."
         },
       ],
       FlutterB:[
         {
           name:'CovidOmeter',
           img:'virus',
-          details:'Useful tool for aspirants to find relevant colleges and explore them.'
+          details:'CovidOmeter app gives daily count of cases with  visual analysis and counts across several regions'
         },
         {
           name:"MovieReviews",
           img:'imdb',
-          details:"Shopping website prototype like amazon and flipkart"
+          details:"MovieReviews gives complete summary of movie with its IMDB ratings"
         },
         {
           name:"TenShorts",
           img:'news',
-          details:"Useful tool for students to find difficult meanings from notes easily."
+          details:"Useful application to fetch latest top 10 news in short and sweet like structure"
         },
       ],
       Angular:[
