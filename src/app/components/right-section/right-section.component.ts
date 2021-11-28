@@ -61,7 +61,7 @@ export class RightSectionComponent implements OnInit,OnChanges {
         {
           name:'AgriEase',
           img:'farm',
-          details:'agriculture application which helps in several parameters such as weather,market values etc'
+          details:'An agriculture application which helps in several parameters such as weather, market values etc'
         },
         {
           name:"Chatter",

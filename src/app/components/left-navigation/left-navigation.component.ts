@@ -9,8 +9,10 @@ export class LeftNavigationComponent implements OnInit {
 
   @Output() aboutClicked = new EventEmitter<any>();
   @Output() internClicked = new EventEmitter<any>();
+
   public navflagHome:boolean=true;
   public navflagAbout:boolean=false;
+  
   constructor() { }
 
   ngOnInit(): void {

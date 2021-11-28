@@ -78,15 +78,8 @@
             height: 0vh;
             flex-direction: column;
             justify-content: center;
-            // justify-content: ;
-          }
+        }
     }    
 }
 
-::ng-deep .tooltip-inner {
-    // width: 50px;
-    background-color: black;
-    color: white;
-    font-size: 12px !important;
-}
 a { color: inherit; } 
