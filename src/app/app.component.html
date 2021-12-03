@@ -1,8 +1,8 @@
 <div class="main">
   <div class="main__left-navigation">
-    <left-navigation (aboutClicked)="aboutClickedFunc($event)"></left-navigation>
+    <left-navigation (aboutClicked)="aboutClickedFunc($event)" (internClicked)="internClickedFunc($event)"></left-navigation>
   </div>
   <div class="main__right-section">
-    <right-section [aboutShowFlag]="aboutShowFlag" ></right-section>
+    <right-section [aboutShowFlag]="aboutShowFlag" [internShowFlag]="internShowFlag"></right-section>
   </div>
 </div>

@@ -1,4 +1,7 @@
 <div class="left-navigation">
+    <!-- <div class="name-logo" (click)="createPolicy()">
+        <span class="iconify short-name" data-icon="vs:k-square"></span>
+    </div> -->
     <div class="name-logo">
         <span class="iconify short-name" data-icon="vs:k-square"></span>
     </div>
@@ -13,9 +16,9 @@
             <span class="iconify" data-icon="fluent:scan-dash-12-filled"></span>
         </div>
     </a>
-    <!-- <div class="nav-icons">
-        <span class="iconify" data-icon="fontisto:at"></span>
-    </div> -->
+    <div class="nav-icons" (click)="internClickedFunc()" [ngStyle]="navflagBlog ? {'color':'rgb(255, 104, 104)'} :{}">
+        <span class="iconify" data-icon="brandico:blogger-rect"></span>
+    </div>
     <div class="exit">
         <a href="http://www.google.com">
             <div>
