@@ -166,6 +166,8 @@
 
 @media screen and (max-width: 768px) {
 
+
+
     .blogs-title__main{
         font-size: 22px !important;
     }
@@ -228,7 +230,27 @@
     .right-section__row1{
         // position: absolute;
         // bottom: 0;
+        // height: 9vh !important;
+        // margin-top: 0px !important;
+        // .right-section__row1__col1{
+        //     .linkdin{
+        //         margin-bottom: 10px !important;
+        //     }
+        //     .github{
+        //         margin-bottom: 10px !important;
+        //     }
+        //     .twitter{
+        //         margin-bottom: 10px !important;
+        //     }
+        //     .instagram{
+        //         margin-bottom: 10px !important;
+        //     }
+        //     // padding-bottom: 20px !important;
+        // }
         // background-color: yellow;
+        // position: fixed;
+        // bottom: 0;
+        // padding-bottom: 100px;
         display: none !important;
     }
     .togglearrow{
@@ -633,12 +655,19 @@
 
 }
 
+.project__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .internship__header{
     padding: 1rem;
     font-size: 27px;
     color: white;  
     display: flex;
     flex-direction: row;
+    align-items: center;
     .internship__header__name{
         padding-left: 0.5rem;
     } 
@@ -680,8 +709,8 @@
   }
 
   .certify{
-      padding-left: 1rem;
-      font-size: 30px;
+      margin-left: 1rem;
+      font-size: 30px !important;
       color: white;
     //   padding: 1rem;
     
@@ -695,6 +724,7 @@
     flex-direction: row;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    align-items: center;
     .certificates__header__name{
         padding-left: 0.5rem;
     }

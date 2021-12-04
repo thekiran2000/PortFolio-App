@@ -52,10 +52,13 @@
     
                 <div class="right-section__row2__col1__row2">
                     <div class="project-title-parent">
-                        <span class="iconify projects-icon" data-icon="eos-icons:project-outlined"></span>
-                        <div class="project-title-parent__name">
-                            Projects
+                        <div class="project__header">
+                            <span class="iconify projects-icon" data-icon="eos-icons:project-outlined"></span>
+                            <div class="project-title-parent__name">
+                                Projects
+                            </div>
                         </div>
+                        
                         <div *ngIf="showIntroSection" class="toggleIcon" (click)="toggleIntroSection()">
                             <span class="iconify togglearrow" data-icon="ant-design:up-circle-outlined"></span>
                         </div> 
@@ -79,7 +82,9 @@
                                     <span class="iconify icons-project" data-icon="healthicons:i-exam-multiple-choice-outline"></span>
                                 </div>
                             </div>
-                            <div class="project-card__title">{{item.name}}</div>
+                            <a style="text-decoration:none" href="{{item.web_link}}" target="_blank">
+                                <div class="project-card__title">{{item.name}}</div>
+                            </a>
                             <div class="project-card__details">{{item.details}}</div>
                         </div>
                     </div>
@@ -88,6 +93,7 @@
                     </div>
                     <div class="right-section__row2__col1__row2__project-info">
                         <div class="project-card" *ngFor="let item of ProjectObject.FlutterA;let i=index;">
+                            
                             <div [ngSwitch]="item.img">
                                 <div *ngSwitchCase="'farm'">
                                     <span class="iconify icons-project" data-icon="healthicons:agriculture-worker"></span>
@@ -99,8 +105,13 @@
                                     <span class="iconify icons-project" data-icon="cib:shopify"></span>
                                 </div>
                             </div>
-                            <div class="project-card__title">{{item.name}}</div>
+
+                            <a style="text-decoration:none" href="{{item.web_link}}" target="_blank">
+                                <div class="project-card__title">{{item.name}}</div>
+                            </a>
+                            
                             <div class="project-card__details">{{item.details}}</div>
+                           
                         </div>
                     </div>
                     <br>
@@ -117,7 +128,9 @@
                                     <span class="iconify icons-project"  data-icon="emojione-monotone:newspaper"></span>
                                 </div>
                             </div>
-                            <div class="project-card__title">{{item.name}}</div>
+                            <a style="text-decoration:none" href="{{item.web_link}}" target="_blank">
+                                <div class="project-card__title">{{item.name}}</div>
+                            </a>
                             <div class="project-card__details">{{item.details}}</div>
                         </div>
                     </div>

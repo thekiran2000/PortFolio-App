@@ -88,16 +88,19 @@ export class RightSectionComponent implements OnInit,OnChanges {
         {
           name:'CollegeDost',
           img:'college',
+          web_link:'https://github.com/thekiran2000/CollegeDost',
           details:'Useful tool for aspirants to find relevant colleges and explore them.'
         },
         {
           name:"ECommerce",
           img:'cart',
+          web_link:'https://github.com/thekiran2000/Shopping_web',
           details:"Shopping website prototype like amazon and flipkart"
         },
         {
           name:"EasyExam",
           img:'exam',
+          web_link:'https://github.com/thekiran2000/EasyExam',
           details:"Useful tool for students to find difficult meanings from notes easily."
         }
       ],
@@ -105,16 +108,19 @@ export class RightSectionComponent implements OnInit,OnChanges {
         {
           name:'AgriEase',
           img:'farm',
+          web_link:'https://github.com/thekiran2000/AgriEase',
           details:'An agriculture application which helps in several parameters such as weather, market values etc'
         },
         {
           name:"Chatter",
           img:'chat',
+          web_link:'https://github.com/thekiran2000/Chatter_App',
           details:"A chatting app which includes chatting between friends and strangers"
         },
         {
           name:"ShopNest",
           img:'shop',
+          web_link:'https://github.com/thekiran2000/ShopNest',
           details:"A Shopping app which having functionalities like amazon with panel for shop owners."
         },
       ],
@@ -122,16 +128,19 @@ export class RightSectionComponent implements OnInit,OnChanges {
         {
           name:'CovidOmeter',
           img:'virus',
+          web_link:'https://github.com/thekiran2000/CovidOmeter',
           details:'CovidOmeter app gives daily count of cases with  visual analysis and counts across several regions'
         },
         {
           name:"MovieReviews",
           img:'imdb',
+          web_link:'https://github.com/thekiran2000/MovieReviews',
           details:"MovieReviews gives complete summary of movie with its IMDB ratings"
         },
         {
           name:"TenShorts",
           img:'news',
+          web_link:'https://github.com/thekiran2000/TenShorts',
           details:"Useful application to fetch latest top 10 news in short and sweet like structure"
         },
       ],
@@ -152,23 +161,6 @@ export class RightSectionComponent implements OnInit,OnChanges {
           details:"Portfolio website for more information about myself"
         },
       ],
-      Python:[
-        {
-          name:'CollegeDost',
-          img:'college',
-          details:'Useful tool for aspirants to find relevant colleges and explore them.'
-        },
-        {
-          name:"ECommerce",
-          img:'cart',
-          details:"Shopping website prototype like amazon and flipkart"
-        },
-        {
-          name:"EasyExam",
-          img:'exam',
-          details:"Useful tool for students to find difficult meanings from notes easily."
-        },
-      ]
     }
 
   }
